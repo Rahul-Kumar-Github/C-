@@ -1,0 +1,23 @@
+<CODE>
+// WITHOUT USING UPDATE FUNCTION
+
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+    int a, b,sum,sub1,z; //initialization of all variables
+    cin >>a>>b;   //taken input from user
+    
+    int *pa = &a;    //storing in pointers
+    int *pb = &b;
+    
+    sum=*pa + *pb;   //main part where we are doing addition and subtraction
+    sub1=*pa - *pb;
+   z= abs(sub1);    //abs() function is used to convert negative to positive in case of integer only whereas fabsf() for float
+
+    cout<<sum<<"\n"<<z;
+
+    return 0;
+}
