@@ -1,0 +1,80 @@
+/*
+You have to write a function int max_of_four(int a, int b, int c, int d) which reads four arguments and returns the greatest of them.
+Input Format
+Input will contain four integers -  , one in each line.
+Output Format
+Print the greatest of the four integers. 
+PS: I/O will be automatically handled.
+Sample Input
+3
+4
+6
+5
+Sample Output
+6 
+*/
+
+
+
+
+//using if else
+//MIGHT FACE DIFFICULTY IN CLEARING TEST CASES
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int max_of_four (int a,int b,int c,int  d)
+{ int temp;
+
+if(a>b)
+ return a;
+else if (b>c)
+return b;
+else if (c>d)
+return c;
+else
+return d;
+
+}
+
+int main() {
+
+
+    int a, b, c, d;
+    cin>>a>>b>>c>>d;
+     
+    cout<<max_of_four(a, b, c, d);
+    
+    return 0;
+}
+
+------------------------------------------------------------------------------------------------------------------
+//using max function
+//IT WILL PASS ALL TEST CASES
+
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int max(int n1,int n2)
+{
+    if(n1>n2)
+    return n1;
+    else 
+    return n2;
+}
+
+int main ()
+{
+    int a,b,c,d;
+    cout<<"enter a/b/c/d value in positive integer \n";
+    cin>>a>>b>>c>>d;
+    
+    int first=max(a,b);
+   int  second=max(c,d);
+   int  final=max(first,second);
+   
+   cout<<final;
+   return 0;
+}
