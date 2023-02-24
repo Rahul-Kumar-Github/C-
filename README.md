@@ -1,2 +1,3 @@
-# C-
-quick and easy learning c++ concepts
+# C++
+
+learning and implementing concepts in real life questions.
